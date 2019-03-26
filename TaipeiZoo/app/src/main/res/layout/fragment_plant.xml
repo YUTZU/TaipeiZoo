@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true">
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_below="@id/imageView"/>
+
+
+            <TextView
+                android:id="@+id/name_enTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_below="@id/nameTv"/>
+
+            <TextView
+                android:id="@+id/name_latinTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_below="@id/name_enTv"/>
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/name_latinTv"
+                android:orientation="horizontal"
+                android:paddingTop="20dp">
+
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="別名：" />
+
+                <TextView
+                    android:id="@+id/nicknameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv1"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_below="@id/layout1"
+                android:paddingTop="20dp">
+
+
+
+            <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="簡介：" />
+
+                <TextView
+                    android:id="@+id/breifTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv2"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_below="@id/layout2"
+                android:paddingTop="20dp">
+
+
+
+            <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="特徵：" />
+
+                <TextView
+                    android:id="@+id/featureTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv3"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_below="@id/layout3"
+                android:paddingTop="20dp">
+
+
+
+            <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="功能：" />
+
+                <TextView
+                    android:id="@+id/functionTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv4"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_below="@id/layout4"
+                android:paddingTop="20dp">
+
+
+
+            <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="家族："
+                    android:textAllCaps="false" />
+
+                <TextView
+                    android:id="@+id/familyTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv5"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/closeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout5"
+                android:background="@color/cardview_light_background"
+                android:visibility="visible"
+                app:srcCompat="@android:drawable/btn_dialog" />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</LinearLayout>
